@@ -4,7 +4,7 @@ exports.up = function (knex) {
 		tbl.increments("id");
 
 		// VIN number, required field
-		tbl.integer("vin").notNullable();
+		tbl.string("vin").notNullable();
 
 		// Make, required field
 		tbl.string("make").notNullable();
